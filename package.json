@@ -3,13 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "dependencies": {
     "ethers": "^6.2.3",
-    "mysql": "^2.18.1"
+    "mysql": "github:felixge/node-mysql",
+    "require.js": "^1.0.0"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    // scripts下的脚本可以通过npm run运行，如npm run dev，实际上是执行npm run webpack serve
+    "dev": "webpack",
+    "build": "webpack --mode production"
   },
   "keywords": [],
   "author": "",
